@@ -1,0 +1,25 @@
+#include "robot-config.h"
+          
+
+int main() {
+    
+    while(1) {
+        DriveLeft.spin(vex::directionType::fwd, Controller1.Axis3.value(), vex::velocityUnits::pct);
+        DriveRight.spin(vex::directionType::fwd, Controller1.Axis2.value(), vex::velocityUnits::pct);
+        
+       // if (Controller2.ButtonA.pressing()) {
+           //  Plow1.rotateTo(vex::directionType::fwd, Controller2.Axis2.value(), vex::velocityUnits::pct);
+             //Plow2.spin(vex::directionType::fwd, Controller2.Axis2.value(), vex::velocityUnits::pct);
+            
+       // }
+        
+           // if (Controller2.ButtonX.pressing()) {
+               Plow2.spin(vex::directionType::fwd, Controller2.Axis2.value(), vex::velocityUnits::pct); 
+               Plow1.spin(vex::directionType::fwd, Controller2.Axis2.value(), vex::velocityUnits::pct);
+}
+//           if (Controller2.ButtonY.pressing()) {
+  //              Plow1.spin(vex::directionType::rev,Controller2.ButtonX);
+    //            Plow2.spin(vex::directionType::rev,Controller2.ButtonX);
+                
+    
+    }
